@@ -1,0 +1,10 @@
+{
+  "name": "broadside",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./assets/tailwind.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./assets/tailwind.css --minify"
+  }
+}
