@@ -1,0 +1,23 @@
+      {/* Preload images of higher zoom level */}
+      <div class="hidden">
+        {Array.from({ length: tileCountY() }).map((_, y) =>
+          Array.from({ length: tileCountX() }).map((_, x) => (
+            <div>
+              <img
+                src={`https://a.tile.openstreetmap.org/${
+                  tileZoom() + 1
+                }/${Math.floor(
+                  toTileX(lon(), tileZoom() + 1) + x
+                )}/${Math.floor(toTileY(lat(), tileZoom() + 1) + x)}.png`}
+              />
+              <img
+                src={`https://a.tile.openstreetmap.org/${
+                  tileZoom() - 1
+                }/${Math.floor(
+                  toTileX(lon(), tileZoom() - 1) + x
+                )}/${Math.floor(toTileY(lat(), tileZoom() + 1) + x)}.png`}
+              />
+            </div>
+          ))
+        )}
+      </div>

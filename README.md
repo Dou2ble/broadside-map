@@ -1,29 +1,34 @@
-cypern och turkiet
+## Usage
 
-# Development
+Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
 
-Your new bare-bones project includes minimal organization with a single `main.rs` file and a few assets.
-
-### Tailwind
-
-1. Install npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-2. Install the Tailwind CSS CLI: https://tailwindcss.com/docs/installation
-3. Run the following command in the root of the project to start the Tailwind CSS compiler:
+This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
 
 ```bash
-npx tailwindcss -i ./input.css -o ./assets/tailwind.css --watch
+$ npm install # or pnpm install or yarn install
 ```
 
-### Serving Your App
+### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
 
-Run the following command in the root of your project to start developing with the default platform:
+## Available Scripts
 
-```bash
-dx serve
-```
+In the project directory, you can run:
 
-To run for a different platform, use the `--platform platform` flag. E.g.
+### `npm run dev` or `npm start`
 
-```bash
-dx serve --platform desktop
-```
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br>
+
+### `npm run build`
+
+Builds the app for production to the `dist` folder.<br>
+It correctly bundles Solid in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
+
+## Deployment
+
+You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
